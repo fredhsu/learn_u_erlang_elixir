@@ -216,4 +216,8 @@ iex(93)> [a, b | [c | [d]]]
     src/elixir.erl:147: :elixir.eval_forms/3
 
     # *** List comprehensions ***
-    
+   iex(4)> lc x inlist [1,2,3,4], do: 2 * x
+   [2, 4, 6, 8]
+   iex(8)> lc x inlist [1,2,3,4,5,6,7,8,9,10], rem(x,2) == 0, do: x 
+   [2, 4, 6, 8, 10]
+
